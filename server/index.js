@@ -23,7 +23,7 @@ app.get('/api/health', (req, res) => {
 
 // Catch-all handler for any request that doesn't match an API route
 // Sends back React's index.html file.
-app.get('*', (req, res) => {
+app.get(/^\/(?!api).*/, (req, res) => {
   res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
 
