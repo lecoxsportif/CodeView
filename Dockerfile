@@ -1,5 +1,5 @@
 # Stage 1: Build the Client
-FROM node:18-alpine AS client-build
+FROM node:22-alpine AS client-build
 WORKDIR /app/client
 COPY client/package*.json ./
 RUN npm install
@@ -7,7 +7,7 @@ COPY client/ ./
 RUN npm run build
 
 # Stage 2: Setup the Server
-FROM node:18-alpine
+FROM node:22-alpine
 WORKDIR /app
 COPY server/package*.json ./server/
 WORKDIR /app/server
