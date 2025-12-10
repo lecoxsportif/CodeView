@@ -16,11 +16,11 @@
     "express": "^5.2.1",
     "nodemon": "^3.1.11",
     "socket.io": "^4.8.1",
+    "ws": "^8.18.3",
     "y-websocket": "^1.5.4"
   },
   "devDependencies": {
     "chai": "^6.2.1",
-    "mocha": "^11.7.5",
-    "ws": "^8.18.3"
+    "mocha": "^11.7.5"
   }
 }
